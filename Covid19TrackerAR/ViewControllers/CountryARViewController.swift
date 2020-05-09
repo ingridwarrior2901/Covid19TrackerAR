@@ -81,7 +81,6 @@ fileprivate extension CountryARViewController {
         countryServices.fetchCountriesInfo { [weak self] (countries) in
             DispatchQueue.main.async {
                 self?.countries = countries
-                print(countries)
                 self?.loadingView.isHidden = true
             }
         }
