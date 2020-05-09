@@ -12,7 +12,7 @@ import UIKit
 struct NetworkServices {
     
     private struct Constants {
-        static let BaseURL = "https://corona.lmao.ninja/countries"
+        static let BaseURL = "https://corona.lmao.ninja/v2/countries"
     }
     
     func loadCountries<T: Decodable>(classType: T.Type, completion: @escaping (T?) -> ()) {
